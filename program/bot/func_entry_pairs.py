@@ -142,11 +142,11 @@ def open_positions(client):
               del(bot_open_dict)
 
               # Confirm live status in print
-              print("Trade status: Live")
+              print("Trade status: LIVE")
               print("---")
 
   # Save agents
-  print(f"Success: Manage open trades checked")
+  print(f"Success: Manage open trade checked")
   if len(bot_agents) > 0:
     with open("bot_agents.json", "w") as f:
       json.dump(bot_agents, f)
