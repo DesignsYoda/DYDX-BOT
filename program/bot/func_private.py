@@ -125,6 +125,11 @@ def abort_all_positions(client):
     bot_agents = []
     with open("bot_agents.json", "w") as f:
       json.dump(bot_agents, f)
+      
+    # Override json file with empty list
+    bot_agents = []
+    with open("bot_agents.json", "w") as f:
+      json.dump(bot_agents, f)
 
     # Return closed orders
     return close_orders
